@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(244, 234, 220);
+    padding-top: 90px;
+}
+
+#contenedorTodo{
+    width: 1000px;
+    height: 650px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#contenedorFotoMostrado{
+    width: 100%;
+    height: 480px;
+}
+#contenedorNavegadorFotos{
+    width: 100%;
+    height: 200px;
+    padding-top: 35px;
+    background-color: rgb(255, 248, 238);
+}
+#contenedorMiniatura{
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+}
+.miniatura{
+    height: 100px;
+    width: 160px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.miniatura img{
+    height: 120px;
+    margin: auto;
+    transition: all 0.4s ease;
+   
+}
+.miniatura img:hover{
+    transform: scale(1.07);
+}
+/*seccion de la foto grande*/
+#contenedorFotoMostrado{
+    position: relative;
+    overflow: hidden;
+}
+#cajaImg img{
+    height: 480px;
+}
+.boton{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    position: absolute;
+    top:45%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 30px;
+}
+#botonPausar{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 5px;
+    left: 450px;
+    font-size: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.boton:active,#botonPausar:active{
+    transform: scale(0.95);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#botonDer,#botonIzq, #botonPausar{
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+}
+#botonIzq{
+    left: 10px;
+}
+
