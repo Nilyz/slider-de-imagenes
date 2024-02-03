@@ -50,7 +50,6 @@ function cambiarPorMiniaturas(posicion){
 }
 
 function pausarSlider(){
-   
     if(pausar===false){
         clearInterval(intervalo);
         pausar=true;
@@ -69,21 +68,40 @@ function pausarSlider(){
 intervalo = setInterval(avanzarSlider,10000);//aquí se establece el slider automático
 
 
-
 miniatura1.addEventListener('click', function() {
+    clearInterval(intervalo);
     cambiarPorMiniaturas(0);
+    cont = 0;
+    intervalo = setInterval(avanzarSlider,10000);
+
 });
 miniatura2.addEventListener('click', function() {
+    clearInterval(intervalo);
     cambiarPorMiniaturas(1);
+    cont = 1;
+    intervalo = setInterval(avanzarSlider,10000);
+
 });
 miniatura3.addEventListener('click', function() {
+    clearInterval(intervalo);
     cambiarPorMiniaturas(2);
+    cont = 2
+    intervalo = setInterval(avanzarSlider,10000);
+
 });
 miniatura4.addEventListener('click', function() {
+    clearInterval(intervalo);
     cambiarPorMiniaturas(3);
+    cont = 3;
+    intervalo = setInterval(avanzarSlider,10000);
+
 });
 miniatura5.addEventListener('click', function() {
+    clearInterval(intervalo);
     cambiarPorMiniaturas(4);
+    cont = 4;
+    intervalo = setInterval(avanzarSlider,10000);
+
 });
 
 
